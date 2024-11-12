@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcf9f;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    /* Initially hidden before the animation starts */
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen */
+    animation: slide-in 1s ease forwards;
+}
+
+.room:nth-child(even) {
+    /* For even numbered rooms, slide in from left */
+    transform: translateX(-100%);
+}
+
+/* Hover effect */
+.room:hover {
+    transform: scale(1.1);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.image-container button.book-room {
+    position: unset;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4cd900;
+    color: white;
+    border: 10px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: default;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Slide-in animation */
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .room {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .room {
+        max-width: 200px;
+    }
+}
+
+/* Animations for heading */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: orangered;
+    text-align: center;
+    animation: pulse 1.5s infinite;
+}
+
+hr {
+    padding: 1px;
+    color: orangered;
+    background-color: black;
+}

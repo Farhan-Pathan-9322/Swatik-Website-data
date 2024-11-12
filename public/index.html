@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Hotel Swastik Food Mall</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Image/Swastiklogo1.png" alt="Swastik Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="hotel-rooms-main\room 2\room.html">Room</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="index1.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="address">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://www.google.com/maps/place/Hotel+Shetty's+Swastik-+Veg+Treat/@19.8360873,74.4735195,17z/data=!3m1!4b1!4m9!3m8!1s0x3bdc44ca7690624f:0x8fe2ffb8b6328148!5m2!4m1!1i2!8m2!3d19.8360873!4d74.4760944!16s%2Fg%2F1hm53r9wt?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"><span>Near Samruddhi Expressway, Shirdi.</span></a>
+        </div>
+
+    </nav>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        window.addEventListener("scroll", function() {
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    
+
+    <section id="Home">
+        <div class="overlay1">
+          <div class="welcome-text">
+            <h1 class="welcome">Welcome to</h1>
+            <img src="Image/Swastiklogo1.png" alt="Shetty's Swastik Veg Treat" class="hotel-logo">
+            <div class="decorative-line"></div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <section class="room wrapper2 top">
+        <div class="container">
+            <div class="heading">
+                <h5>OUR ROOMS</h5>
+                <h2>Fascinating rooms & suites </h2>
+            </div>
+
+
+            
+            <div class="content flex mtop">
+                <div class="left grid2">
+                    <div class="box1">
+                        <i class="fas fa-desktop"></i>
+                        <p></p>
+                        <h3>No booking fee</h3>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-dollar-sign"></i>
+                        <p></p>
+                        <h3>Best rate guarantee</h3>
+                    </div>
+                    <div class="box1">
+                        <i class="fab fa-resolving"></i>
+                        <p></p>
+                        <h3>Reservations 24/7</h3>
+                    </div>
+                    <div class="box">
+                        <i class="fal fa-alarm-clock"></i>
+                        <p></p>
+                        <h3>High-speed Wi-Fi</h3>
+                    </div>
+                    <div class="box1">
+                        <i class="fas fa-wind"></i>
+                        <p></p>
+                        <h3>AC/Non-AC</h3>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-user-tie"></i>
+                        <p></p>
+                        <h3>Excellent service</h3>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="image/r.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container2"  id="room">
+      <img src="Image/o3.jpg" alt="Background Image" class="bg-image">
+      <div class="overlay"></div>
+      <div class="book-now">
+          <h1 class="luxury-quote">Experience luxury, book your stay with us today!</h1>
+          <h3 class="lighting-button"><a href="index1.html">Contact for Booking </a></h3>
+      </div>
+  </section>
+  
+
+  <section class="about" id="about">
+    <div class="container1">
+        <div class="heading">
+            <h5>EXPLORE</h5>
+            <h2>We are cool to give you pleasure</h2>
+        </div>
+        <div class="content flex top">
+            <div class="left">
+                <h4>As much as comfort want to get from us everything!!!</h4>
+                <p class="description">Welcome to Hotel Swastik, your premier destination for exquisite Jain food, birthday parties, wedding celebrations, and more. Owned by Vishwanath Shetty, our hotel features the best garden in the area, offering a serene setting for all occasions. With flexible parking options and a spacious banquet hall, we ensure a hassle-free and memorable event experience. Our comfortable lodging rooms provide a pleasant stay for all our guests. Whether you're here for a special event or a relaxing getaway, Hotel Swastik is committed to making your experience exceptional.</p>
+            </div>
+            <div class="right">
+                <!-- Optional: Add an image or decorative element -->
+                <div class="image-container">
+                    <img src="Image/b7.png" alt="Hotel Image" class="about-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class="services-section" id="service">
+        <h1 class="section-title">Services</h1>
+        <h2 class="slogan">Our Commitment to Your Comfort</h2>
+        <div class="service-card">
+            <div class="service-icon">🌿</div>
+            <h3>Free Garden Access</h3>
+            <p>Enjoy our beautifully landscaped garden, perfect for a peaceful stroll or a relaxing break.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🚗</div>
+            <h3>Free Parking</h3>
+            <p>Take advantage of our secure and spacious parking facilities, available at free of cost.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🛏️</div>
+            <h3>Good Lodging</h3>
+            <p>Experience our comfortable and modern rooms, equipped with all the amenities you need for a comfortable stay.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🚐</div>
+            <h3>Free Pick-up & Drop Facility</h3>
+            <p>We offer Free pick-up and drop services to and from the airport, train station, and key local attractions.</p>
+            
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🎉</div>
+            <h3>Conference/Party Hall</h3>
+            <p>Our versatile hall is ideal for both corporate events and social gatherings with state-of-the-art amenities.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>24x7 Electric Backup & Hot Water Facility</h3>
+            <p>Rest assured with our reliable 24-hour electric backup system and 24x7 hot water facility, ensuring continuous power supply and comfort throughout your stay.</p>
+            
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="testimonial-header">
+            <h2>TESTIMONIALS</h2>
+            <p>What our customers say</p>
+        </div>
+    
+        <div class="testimonial-container">
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c1.jpg" alt="User 1">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 stars -->
+                        </div>
+                        <p>"The food at this hotel is amazing. Exceeded my expectations!"</p>
+                        <h4>- Sarah L.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c2.jpg" alt="User 2">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span> <!-- 5 stars -->
+                        </div>
+                        <p>"Room service was prompt. Our stay was comfortable."</p>
+                        <h4>- Michael B.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c3.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 stars -->
+                        </div>
+                        <p>"The stay was pleasant, though the room could have been a bit quieter."</p>
+                        <h4>- Emily R.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c4.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 stars -->
+                        </div>
+                        <p>"The food was tasty, but the wait time for service was longer than expected."</p>
+                        <h4>- John R.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c8.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 stars -->
+                        </div>
+                        <p>"Great location and service, but the Wi-Fi was spotty at times."</p>
+                        <h4>- Leena A.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c5.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 stars -->
+                        </div>
+                        <p>"Comfortable room, though I felt the decor was a little outdated."</p>
+                        <h4>- Green P.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c6.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span> <!-- 5 stars -->
+                        </div>
+                        <p>"Friendly staff, but the check-in process could be more efficient."</p>
+                        <h4>- Devid L.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c9.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9734;</span> <!-- 4 stars -->
+                        </div>
+                        <p>"Overall a nice experience, but the bathroom could have been cleaner."</p>
+                        <h4>- Megha R.</h4>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="Image/c7.jpg" alt="User 3">
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span> <!-- 5 stars -->
+                        </div>
+                        <p>"The amenities were good, but the air conditioning could have been stronger."</p>
+                        <h4>- Emily R.</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Buttons for manual navigation -->
+            <div class="testimonial-buttons">
+                <button id="prevTestimonial">&#10094;</button>
+                <button id="nextTestimonial">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+
+ <script>
+    let index = 0;
+let interval;
+
+// Function to show testimonial by index
+function showTestimonial(index) {
+    const slider = document.getElementById('testimonialSlider');
+    slider.style.transform = 'translateX(' + (-index * 100 / 3) + '%)';
+}
+
+// Function for previous testimonial
+function prevTestimonial() {
+    index = (index > 0) ? index - 1 : 5;  // Adjust based on number of testimonials
+    showTestimonial(index);
+}
+
+// Function for next testimonial
+function nextTestimonial() {
+    index = (index < 5) ? index + 1 : 0;  // Adjust based on number of testimonials
+    showTestimonial(index);
+}
+
+// Auto-slide function
+function startAutoSlide() {
+    interval = setInterval(() => {
+        nextTestimonial();
+    }, 3000);
+}
+
+// Stop auto-slide on hover
+document.getElementById('testimonialSlider').addEventListener('mouseenter', function() {
+    clearInterval(interval);
+});
+
+// Resume auto-slide when not hovering
+document.getElementById('testimonialSlider').addEventListener('mouseleave', function() {
+    startAutoSlide();
+});
+
+// Event listeners for buttons
+document.getElementById('prevTestimonial').addEventListener('click', function() {
+    clearInterval(interval); // Stop auto-slide when using manual navigation
+    prevTestimonial();
+    startAutoSlide(); // Resume auto-slide after manual interaction
+});
+
+document.getElementById('nextTestimonial').addEventListener('click', function() {
+    clearInterval(interval); // Stop auto-slide when using manual navigation
+    nextTestimonial();
+    startAutoSlide(); // Resume auto-slide after manual interaction
+});
+
+// Start auto-slide when page loads
+startAutoSlide();
+
+ </script>
+    
+    
+        
+
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Near Samruddhi Expressway,<br>Shirdi.</p>
+          <p>Email: hotelswastik@gmail.com</p>
+          <p>Phone: +91 7350 333 222</p>
+      </div>
+      <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+              <a href="#" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/hotelshettysswastikvegtreat/profilecard/?igsh=MXV3Y3BocWJycGNsag%3D%3D" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/4Ju7SW7Xq5BMQPMq/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+      </div>
+      <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index1.html">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy;  SHETTY'S SWASTIK VEG TREAT. All rights reserved.
+        <br><br>
+        Developed by Code Crushers.
+      </p>
+  </div>
+</footer>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

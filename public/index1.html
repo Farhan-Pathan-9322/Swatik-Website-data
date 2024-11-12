@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h1 class="h1">Contact Us</h1>
+    <div id="notification" class="notification"></div> <!-- Notification div -->
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Follows Us For More:</h2><br />
+            
+            <div class="contact-details">
+                <p><strong>Follow Us To get in Touch With Us</strong></p> <br />
+                
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/share/4Ju7SW7Xq5BMQPMq/" target="_blank"><img src="images/facebook.png" alt="Facebook" height="25px">&nbsp;&nbsp;Facebook</a>
+                <br/> <br />   <br/> 
+                <a href="https://www.instagram.com/hotelshettysswastikvegtreat/profilecard/?igsh=MXV3Y3BocWJycGNsag==" target="_blank"><img src="images/instagram.png" alt="Instagram" height="25px">&nbsp;&nbsp;Instagram</a>
+                <br/> <br />   <br/> 
+                <a href="mailto:hotelswastik@gmail.com" target="_blank"><img src="images/email.png" alt="Email" height="30px">&nbsp;hotelswastik@gmail.com</a> <br /> <br /> <br />
+                <a href="tel:917350333222" target="_blank"><img src="images/phone.png" alt="Phone" height="25px">&nbsp;&nbsp;+917350333222</a>
+                <br/> <br />   <br/> 
+            </div>
+        </div>
+        <div class="form-section">
+            <p>Contact us for any inquiries or bookings.</p>
+          
+            <form action="/submit-form" method="post">
+                <div class="form-group">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="people" placeholder="Enter number of peoples" required>
+                    <input type="number" name="days" placeholder="How many days do you want to stay?" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Message" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Check for success message in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const success = urlParams.get('success');
+
+        const notificationDiv = document.getElementById('notification');
+
+        if (success === '1') {
+            notificationDiv.textContent = 'Data submitted successfully!';
+            notificationDiv.style.color = 'green';
+        } else if (success === '0') {
+            notificationDiv.textContent = 'Data submission failed!';
+            notificationDiv.style.color = 'red';
+        }
+    </script>
+</body>
+</html>
