@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Google Apps Script Web App URL
+
 const scriptUrl = 'https://script.google.com/macros/s/AKfycbyy1Cfhs2bMKB2Ip6ev3BWT9e7qJPsvqw75iC6Rx94Ya2IikuRLLQLJ5xLvrOndWdYm/exec'; // Replace with your Google Apps Script URL
 
 // Serve the static files (HTML, CSS)
