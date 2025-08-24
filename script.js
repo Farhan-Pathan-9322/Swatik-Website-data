@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     let slideIndex = 0;
     const slides = document.querySelectorAll('.slideshow');
 
@@ -100,4 +101,5 @@ testimonialCards.forEach(card => {
         fullDescription.style.display = 'none'; // Hide full description
     });
 });
+
 
